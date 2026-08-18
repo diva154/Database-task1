@@ -13,13 +13,13 @@ public class Main {
         //1.create user table
         userService.createUsersTable();
 
-        //2.Add users to database( console outputs will print automatically via Saveuser)
+        //2.Add users to database( console outputs will print automatically via saveUser)
         userService.saveUser("Jia","Khan",(byte)20);
         userService.saveUser("Alice","Smith",(byte) 22);
         userService.saveUser("Bob","Oclean",(byte) 30);
         userService.saveUser("Henry","Brown",(byte) 45);
 
-        //3.Get all users from database and print them to comsole
+        //3.Get all users from database and print them to console
         List<User> users = userService.getAllUsers();
         for (User user : users){
             System.out.println(user);
